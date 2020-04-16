@@ -1,38 +1,415 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff9d00;
+}
+.container {
+  display: flex;
+  box-sizing: border-box;
+  width: 1280px;
+  height: 800px;
+  background: #ff9d00;
+  align-items: center;
+  justify-content: center;
+}
+.startBox {
+  display: flex;
+  width: 740px;
+  height: 435px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleBox {
+  display: inline-flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.titleNumber {
+  max-width: 243px;
+  max-height: 282px;
+  font-size: 240px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  color: white;
+  text-shadow: 12px 0px 0px black;
+}
+.titleText {
+  position: relative;
+  max-width: 473px;
+  max-height: 208px;
+  font-size: 96px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 96px;
+  margin-top: 20px;
+}
+.titleText::after {
+  position: absolute;
+  top: 18px;
+  left: 388px;
+  content: "+−×÷";
+  color: white;
+  max-width: 85px;
+  max-height: 52px;
+  font-size: 43px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 40px;
+  border-bottom: 4px solid white;
+}
+.titleText::before {
+  position: absolute;
+  top: 70px;
+  left: 388px;
+  content: "";
+  width: 85px;
+  height: 0px;
+  border-bottom: 4px solid white;
+}
+.start {
+  width: 350px;
+  height: 58px;
+  background: #000;
+  border: none;
+  color: #ff9d00;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 36px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  color: white;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Roboto Condensed";
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 33px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainBox {
+  display: flex;
+  height: 375px;
+  width: 740px;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainScoreBoxTitle {
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 30px;
+  border: 4px solid white;
+  padding: 8px 16px 8px 16px;
+  color: white;
+}
+.mainScoreBoxScore {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 44px;
+  margin-top: 6px;
+}
+.mainScoreBoxScore::before {
+  box-sizing: border-box;
+  content: "SCORE";
+  background: white;
+  padding: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  color: #ff9d00;
+  margin-right: 8px;
+}
+.timer {
+  font-size: 96px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Roboto Condensed";
+  line-height: 96px;
+  color: white;
+}
+.mainFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.formula {
+  width: 445px;
+  height: 131px;
+  font-size: 90px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 112px;
+}
+.answerBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.answer {
+  background: white;
+  width: 225px;
+  height: 131px;
+  font-size: 112px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 130px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 0 42px 0 43px;
+  border: 4px solid transparent;
+}
+.correct {
+  animation: correct 0.7s;
+}
+.error {
+  animation: error 0.7s;
+}
+@keyframes error {
+  0% {
+    border: 4px solid transparent;
+  }
+  50% {
+    border: 4px solid red;
+    box-shadow: 0 0px 32px red;
+  }
+  100% {
+    border: 4px solid transparent;
+  }
+}
+@keyframes correct {
+  0% {
+    border: 4px solid transparent;
+  }
+  50% {
+    border: 4px solid green;
+    box-shadow: 0 0px 32px green;
+  }
+  100% {
+    border: 4px solid transparent;
+  }
+}
+
+.answerContent {
+  width: 225px;
+  height: 28px;
+  content: "press enter to answer";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Roboto Condensed";
+  line-height: 16px;
+  color: white;
+  text-align: center;
+}
+.restartBox {
+  width: 600px;
+  height: 418px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.restartHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restartTitle {
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 30px;
+  border: 4px solid white;
+  padding: 8px 16px 8px 16px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.restartFinalScore {
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 56px;
+  margin-top: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.restartFinalScore::before {
+  content: "—";
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 56px;
+  color: white;
+  margin-right: 8px;
+}
+.restartFinalScore::after {
+  content: "—";
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 56px;
+  color: white;
+  margin-left: 8px;
+}
+.finalScore {
+  font-size: 112px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  text-align: center;
+  line-height: 112px;
+}
+.again {
+  width: 350px;
+  height: 58px;
+  background: #000;
+  border: none;
+  color: #ff9d00;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 36px;
+  text-align: center;
 }
