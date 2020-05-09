@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sixty-seconds-gaming/static/css/main.3b9a89c7.chunk.css",
+    "main.js": "/sixty-seconds-gaming/static/js/main.11f3526c.chunk.js",
+    "main.js.map": "/sixty-seconds-gaming/static/js/main.11f3526c.chunk.js.map",
+    "runtime-main.js": "/sixty-seconds-gaming/static/js/runtime-main.827f3f37.js",
+    "runtime-main.js.map": "/sixty-seconds-gaming/static/js/runtime-main.827f3f37.js.map",
+    "static/js/2.cad134f1.chunk.js": "/sixty-seconds-gaming/static/js/2.cad134f1.chunk.js",
+    "static/js/2.cad134f1.chunk.js.map": "/sixty-seconds-gaming/static/js/2.cad134f1.chunk.js.map",
+    "index.html": "/sixty-seconds-gaming/index.html",
+    "precache-manifest.48bf45c4ea983b1b9410a73d1d6cfde4.js": "/sixty-seconds-gaming/precache-manifest.48bf45c4ea983b1b9410a73d1d6cfde4.js",
+    "service-worker.js": "/sixty-seconds-gaming/service-worker.js",
+    "static/css/main.3b9a89c7.chunk.css.map": "/sixty-seconds-gaming/static/css/main.3b9a89c7.chunk.css.map",
+    "static/js/2.cad134f1.chunk.js.LICENSE.txt": "/sixty-seconds-gaming/static/js/2.cad134f1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.827f3f37.js",
+    "static/js/2.cad134f1.chunk.js",
+    "static/css/main.3b9a89c7.chunk.css",
+    "static/js/main.11f3526c.chunk.js"
+  ]
+}
